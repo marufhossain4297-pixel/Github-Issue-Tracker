@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#F8FAFC]">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Issue Tracker | Loging</title>
+    <!-- favicon -->
+     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <!-- daisy ui + tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+          font-family: "Geist", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <section class="bg-white justify-self-center my-10 rounded-2xl shadow-md mx-5">
+        <div class="">
+            <div class="text-center mx-auto mb-6 lg:px-18">
+                <img class="justify-self-center pt-8 pb-6 mx-[142px]" src="./images/github-logo.png" alt="">
+                <h1 class="lg:text-[32px] text-[25px] font-semibold mb-1">GitHub Issues Tracker</h1>
+                <p class="text-[#64748B]">Sign in to manage your issues</p>
+            </div>
+            <div class="px-8">
+                <fieldset class="fieldset">
+
+                <label class="label text-black font-semibold text-[13.5px]">Username</label>
+                <input id="user" type="text" class="input w-full focus:outline-[#165DFC] focus:border-none required" placeholder="Enter Username" required/>
+                <p class="text-primary mb-2">Default: admin</p>
+
+                <label class="label text-black font-semibold text-[13.5px]">Password</label>
+                <input id="pass" type="password" class="input w-full focus:outline-[#165DFC] focus:border-none" required placeholder="Enter Password" />
+                <p class="text-primary">Default: admin123</p>
+
+                <button id="btn-sing" class="btn btn-primary mt-4">Sign In</button>
+                
+                </fieldset>
+            </div>
+            <div class="mt-8 mx-8 relative mb-6">
+                <div class="absolute inset-0 flex items-center">
+                    <div class="w-full border-t border-gray-200"></div>
+                </div>
+                <div class="relative flex justify-center text-sm">
+                    <span class="px-2 bg-white text-gray-500">OR</span>
+                </div>
+            </div>
+            <div class="text-center px-8 pb-8">
+                <p class="text-[14px] mb-2 text-[#64748B]">Demo Credentials:</p>
+                <div class="bg-[#F8FAFC] py-6 rounded-2xl">
+                    <p><span class="font-semibold">Username</span>: admin</p>
+                    <p><span class="font-semibold">Password</span>: admin123</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+</html>
