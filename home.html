@@ -46,7 +46,16 @@
         </div>
     </header>
 
-    
+    <section id="btn-section" class="w-10/12 bg-white mx-auto mt-[150px] mb-4 shadow-sm rounded-2xl">
+        <div class="flex gap-2 flex-col md:flex-row lg:flex-row px-6 py-6">
+            <button onclick="switchTab('all')" id="tab-all"
+                class="btn text-white bg-primary px-[50px] py-3">All</button>
+            <button onclick="switchTab('open')" id="tab-open"
+                class="btn px-[50px] py-3 bg-transparent text-black hover:bg-gray-200">Open</button>
+            <button onclick="switchTab('close')" id="tab-close"
+                class="btn px-[50px] py-3 bg-transparent text-black hover:bg-gray-200">Closed</button>
+        </div>
+    </section>
 
     <script src="./home.js"></script>
 </body>
