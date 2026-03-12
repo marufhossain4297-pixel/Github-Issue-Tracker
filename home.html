@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#F8FAFC]">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Issue Tracker</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <style>
+        * {
+            font-family: "Geist", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar bg-base-100 shadow-sm fixed top-0 flex-row z-50">
+            <div class="navbar mx-auto w-11/12">
+                <div class="flex-1 flex items-center gap-1">
+                    <img class="w-9 h-[37px]" src="./images/github-logo.png" alt="">
+                    <a class="text-[24px] font-bold">GitHub Issues Tracker</a>
+                </div>
+                <div class="flex gap-2 flex-col lg:flex-row">
+                    <label class="input">
+                        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                                stroke="currentColor">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.3-4.3"></path>
+                            </g>
+                        </svg>
+                        <input id="search-input" type="search" required placeholder="Search" />
+                    </label>
+                    <button id="search-btn" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i>
+                        Search</button>
+                    <button id="logout" class="btn bg-red-600 text-white"><i
+                            class="fa-solid fa-arrow-right-from-bracket fa-rotate-180"></i>Logout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+
+    <script src="./home.js"></script>
+</body>
+
+</html>
