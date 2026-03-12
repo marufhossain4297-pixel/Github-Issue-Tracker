@@ -43,3 +43,31 @@ const switchTab = (tab) => {
         displayLoadData(closeIssue, closeContainer)
     }
 }
+
+const Search = () => {
+    const searchText = document.getElementById('search-input').value;
+
+    if (searchText) {
+        manageSpinner(true);
+        const url = `https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q=${searchText}`;
+
+        fetch(url)
+            .then(res => res.json())
+            .then(data => {
+                switchTab('all');
+                displayLoadData(data.data, dataContainer);
+
+                if (data.data.length === 0) {
+                    dataContainer.innerHTML = `<h1 class="text-2xl text-center col-span-4 mt-10">No issues found for "${searchText}"</h1>`;
+                }
+            })
+    }
+};
+
+document.getElementById('search-btn').addEventListener('click', Search);
+
+document.getElementById('search-input').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        Search();
+    }
+});
